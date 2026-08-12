@@ -10,7 +10,10 @@ function App() {
     setTodos([...todos, todo]);
     setTodo("");
   }
-
+  function deleteTodo(index) {
+  setTodos(todos.filter((_, i) => i !== index));
+  alert('ok')
+}
   return (
     <div>
       <h1>Todo DevOps</h1>
@@ -28,8 +31,11 @@ function App() {
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <button onClick={() => deleteTodo(1)}> delete</button>
     </div>
   );
+
+
 }
 
 export default App;
