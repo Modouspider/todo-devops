@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-a
+
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
 
