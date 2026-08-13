@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-  echo lune
+  echo l
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
 
